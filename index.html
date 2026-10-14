@@ -1,13 +1,15 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Cricket Basic to Pro</title>
+
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 body{font-family:Arial,sans-serif;background:#071b15;color:white;line-height:1.6}
-header{padding:20px;background:#0d2b20;display:flex;justify-content:space-between;align-items:center}
+header{padding:20px;background:#0d2b20;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap}
 .logo{font-size:20px;font-weight:bold;color:#b8ff59}
 nav a{color:white;text-decoration:none;margin-left:12px;font-size:13px}
 .hero{padding:75px 22px;text-align:center;background:linear-gradient(0deg,rgba(3,20,13,.94),rgba(3,20,13,.4)),url('https://images.unsplash.com/photo-1531415074968-036ba1b575da?auto=format&fit=crop&w=1200&q=85') center/cover}
@@ -19,19 +21,25 @@ section{padding:45px 20px}
 h2{text-align:center;font-size:28px;margin-bottom:10px}
 .sub{text-align:center;color:#b6c8bc;margin-bottom:28px}
 .cards{display:grid;grid-template-columns:1fr 1fr;gap:14px}
-.card{background:#103326;border:1px solid #28513c;border-radius:12px;padding:20px 15px}
-.card .emoji{font-size:32px}
-.card h3{color:#b8ff59;margin:8px 0}
+.card{background:#103326;border:1px solid #28513c;border-radius:12px;padding:14px;min-width:0}
+.card img{display:block;width:100%;height:170px;object-fit:cover;border-radius:8px}
+.card h3{color:#b8ff59;margin:10px 0}
 .card p{font-size:14px;color:#d0ddd4}
 .steps{max-width:600px;margin:auto}
 .step{padding:16px;margin:12px 0;background:#103326;border-radius:10px}
 .step strong{color:#b8ff59}
 .cta{text-align:center;background:#103326}
 footer{text-align:center;padding:22px;color:#b6c8bc;font-size:13px}
-@media(min-width:700px){.hero{padding:110px 20px}h1{font-size:60px}.cards{grid-template-columns:repeat(4,1fr)}section{padding:60px 8%}}
+@media(min-width:700px){
+.hero{padding:110px 20px}
+h1{font-size:60px}
+.cards{grid-template-columns:repeat(4,minmax(0,1fr))}
+section{padding:60px 8%}
+}
 </style>
 </head>
 <body>
+
 <header>
 <div class="logo">🏏 CRICKET B2P</div>
 <nav><a href="#skills">Skills</a><a href="#practice">Practice</a></nav>
@@ -49,37 +57,28 @@ footer{text-align:center;padding:22px;color:#b6c8bc;font-size:13px}
 <p class="sub">Learn step by step, from beginner to advanced.</p>
 <div class="cards">
 
+<div class="card">
+<img src="file_00000000136c8208b442b51ec11971d4.png" alt="Cricket Batting">
+<h3>🏏 Batting</h3>
+<p>Learn grip, stance, footwork and cover drive step by step.</p>
+</div>
 
+<div class="card">
+<img src="bowling.jpg" alt="Cricket Bowling">
+<h3>🎯 Bowling</h3>
+<p>Improve your run-up, bowling action, line and length.</p>
+</div>
 
-<div class="cards">
-  <div class="card">
-    <img src="file_00000000136c8208b442b51ec11971d4.png"
-     alt="Cricket Batting"
-     style="width:100%; max-width:300px; height:170px; object-fit:cover;"></h3>
-    <p>Learn grip, stance, footwork and cover drive step by step.</p>
-  </div>
+<div class="card">
+<img src="fielding.png" alt="Cricket Fielding Practice">
+<h3>🧤 Fielding</h3>
+<p>Practice catching, ground fielding and accurate throws.</p>
+</div>
 
-  <div class="card">
-    
-<img src="fielding.png"
-     alt="Cricket Fielding Practice"
-     style="width:100%; height:220px; object-fit:cover; border-radius:10px;">
-
-    <h3>🎯 Bowling</h3>
-    <p>Improve your run-up, bowling action, line and length.</p>
-  </div>
-
-  <div class="card">
-    <img src="https://images.unsplash.com/photo-1531415074968-036ba1b575da?auto=format&fit=crop&w=600&q=80" alt="Cricket fielding" style="width:100%;height:170px;object-fit:cover;border-radius:8px;">
-    <h3>🧤 Fielding</h3>
-    <p>Practice catching, ground fielding and accurate throws.</p>
-  </div>
-
-  <div class="card">
-    <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=600&q=80" alt="Cricket fitness" style="width:100%;height:170px;object-fit:cover;border-radius:8px;">
-    <h3>💪 Fitness</h3>
-    <p>Build stamina, speed, agility and strength for cricket.</p>
-  </div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=600&q=80" alt="Cricket Fitness">
+<h3>💪 Fitness</h3>
+<p>Build stamina, speed, agility and strength for cricket.</p>
 </div>
 
 </div>
@@ -106,5 +105,6 @@ footer{text-align:center;padding:22px;color:#b6c8bc;font-size:13px}
 <p>🏏 Cricket Basic to Pro</p>
 <p>Learn · Practice · Improve · Repeat</p>
 </footer>
+
 </body>
 </html>
